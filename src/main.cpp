@@ -6,12 +6,23 @@
 #include <mutex> 
 #include <thread>
 #include <chrono>
+#include <future>
 
 #include <vector>
 #include <functional>
 
 #include "include/func_scanner.hpp"
 #include "config/config.hpp"
+
+std::mutex mtx;
+
+void  ___socket_callback(){
+
+}
+
+void  ___task_callback(){
+    std::future <int> per = std::async();
+}
 
 /*Сканнер IP - адрессов и портов*/
 int main(){
